@@ -7,6 +7,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
+pip install anthropic python-dotenv  # runtime deps not yet in pyproject.toml
+cp .env.example .env  # set ANTHROPIC_API_KEY=your_key_here
 ```
 
 ## Commands
